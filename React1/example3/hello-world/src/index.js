@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import HelloWorld from './components/HelloWorld';
-import ChampList from './components/ChampList';
+import { ChampList, app } from './components/ChampList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,7 +23,9 @@ root.render(
       <ChampList/>
       <ChampList/>
       <ChampList/>
+      <App/>
     </div>
+    
   )
   
   // <React.StrictMode>
