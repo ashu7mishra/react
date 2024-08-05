@@ -5,25 +5,27 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import HelloWorld from './components/HelloWorld';
 import { ChampList, app } from './components/ChampList';
+import Like from './components/Like';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   (
-    <div>
+    <div className='App'>
+      <Like/>
       {/* <h1>Hello World</h1> */}
+      {/* <HelloWorld/>
       <HelloWorld/>
-      <HelloWorld/>
-      <HelloWorld/>
+      <HelloWorld/> */}
       {/* <ul>
         <li>Prabir</li>
         <li>Souvik</li>
         <li>Abhishek</li>
         <li>Ashutosh</li>
       </ul> */}
+      {/* <ChampList/>
       <ChampList/>
       <ChampList/>
-      <ChampList/>
-      <App/>
+      <App/> */}
     </div>
     
   )
