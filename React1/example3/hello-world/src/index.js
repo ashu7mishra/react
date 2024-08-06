@@ -8,6 +8,7 @@ import { ChampList, app } from './components/ChampList';
 import Like from './components/Like';
 import Counter from './components/Counter';
 import RandomName from './components/RandomNameComponent';
+import ParentMoney from './components/ParentMoney';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
       <Counter counterName={'Rohan'} initialValue={10}/>
       <Counter counterName={'Abhishek'} initialValue={20}/>
       <Counter counterName={'SRK'} initialValue={30}/>
+      <ParentMoney money={200}/>
       {/* <h1>Hello World</h1> */}
       {/* <HelloWorld/>
       <HelloWorld/>
