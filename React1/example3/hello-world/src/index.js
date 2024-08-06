@@ -14,8 +14,10 @@ root.render(
   (
     <div className='App'>
       <Like/>
-      <Counter/>
       <RandomName/>
+      <Counter counterName={'Rohan'} initialValue={10}/>
+      <Counter counterName={'Abhishek'} initialValue={20}/>
+      <Counter counterName={'SRK'} initialValue={30}/>
       {/* <h1>Hello World</h1> */}
       {/* <HelloWorld/>
       <HelloWorld/>

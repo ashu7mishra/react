@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-const Counter = () => {
-    const [count, setCount] = useState(0);
+const Counter = (props) => {
+    // var counterName = 'Kiran';
+    const [count, setCount] = useState(props.initialValue);
 
     const decreaseCount = () =>{
         if (count >0){
@@ -15,7 +16,7 @@ const Counter = () => {
     }
     return (
         <div>
-            <h1>Counter</h1>
+            <h1>{props.counterName} Counter</h1>
             <div>
                 <button onClick={decreaseCount}>-</button>
                 {count}
