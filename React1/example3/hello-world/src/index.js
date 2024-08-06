@@ -6,12 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import HelloWorld from './components/HelloWorld';
 import { ChampList, app } from './components/ChampList';
 import Like from './components/Like';
+import Counter from './components/Counter';
+import RandomName from './components/RandomNameComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   (
     <div className='App'>
       <Like/>
+      <Counter/>
+      <RandomName/>
       {/* <h1>Hello World</h1> */}
       {/* <HelloWorld/>
       <HelloWorld/>
