@@ -9,17 +9,19 @@ import Like from './components/Like';
 import Counter from './components/Counter';
 import RandomName from './components/RandomNameComponent';
 import ParentMoney from './components/ParentMoney';
+import TodoList from './components/TodoList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   (
     <div className='App'>
-      <Like/>
+      <TodoList/>
+      {/* <Like/>
       <RandomName/>
       <Counter counterName={'Rohan'} initialValue={10}/>
       <Counter counterName={'Abhishek'} initialValue={20}/>
       <Counter counterName={'SRK'} initialValue={30}/>
-      <ParentMoney money={200}/>
+      <ParentMoney money={200}/> */}
       {/* <h1>Hello World</h1> */}
       {/* <HelloWorld/>
       <HelloWorld/>
