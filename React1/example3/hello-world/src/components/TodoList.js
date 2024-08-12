@@ -1,6 +1,12 @@
 import {useState} from "react"
 const TodoList = () => {
-    const [list, setList] = useState(['Item 1', 'Item 2','Item 3','Item 4','Item 5']);
+    const [list, setList] = useState([
+        {title:'Item 1', id: 1},
+        {title:'Item 2', id: 2}, 
+        {title:'Item 3', id: 3}, 
+        {title:'Item 4', id: 4}, 
+        {title:'Item 5', id: 5}, 
+    ]);
     const[newItem, setNewItem] = useState('')
     // const renderList = () => {
     //     const data = [];
@@ -22,7 +28,10 @@ const TodoList = () => {
         // console.log(newItem);
         // list.push(newItem);   //not working
         setNewItem('')
-        const newList = [...list, newItem];
+        const newList = [...list,{ 
+            title: newItem,
+            id: Math.random()
+        }];
         setList(newList);
     }
 
@@ -37,7 +46,7 @@ const TodoList = () => {
             <ul>
                 {
                     list.map(item => {
-                        return (<li>{item}</li>);
+                        return (<li key={item.id}>{item.title}</li>);
                     })
                 }
                 {/* {renderList()} */}
