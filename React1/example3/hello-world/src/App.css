@@ -47,3 +47,7 @@
 .TodoWrapper {
   width: 200px;
 }
+
+li.completed {
+  text-decoration: line-through;
+}

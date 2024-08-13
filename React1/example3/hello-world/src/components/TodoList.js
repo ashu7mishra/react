@@ -1,11 +1,11 @@
 import {useState} from "react"
 const TodoList = () => {
     const [list, setList] = useState([
-        {title:'Item 1', id: 1},
-        {title:'Item 2', id: 2}, 
-        {title:'Item 3', id: 3}, 
-        {title:'Item 4', id: 4}, 
-        {title:'Item 5', id: 5}, 
+        {title:'Item 1', id: 1, completed: true},
+        {title:'Item 2', id: 2, completed: false}, 
+        {title:'Item 3', id: 3, completed: true}, 
+        {title:'Item 4', id: 4, completed: false}, 
+        {title:'Item 5', id: 5, completed: true}, 
     ]);
     const[newItem, setNewItem] = useState('')
     // const renderList = () => {
@@ -35,6 +35,8 @@ const TodoList = () => {
         setList(newList);
     }
 
+    // const completed = false;
+
     return (
         <div className="TodoWrapper">
             <h2>Todo List</h2>
@@ -46,7 +48,7 @@ const TodoList = () => {
             <ul>
                 {
                     list.map(item => {
-                        return (<li key={item.id}>{item.title}</li>);
+                        return (<li key={item.id} className={item.completed ? "completed" : ''}>{item.title}</li>);
                     })
                 }
                 {/* {renderList()} */}
