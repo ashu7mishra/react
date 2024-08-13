@@ -10,12 +10,14 @@ import Counter from './components/Counter';
 import RandomName from './components/RandomNameComponent';
 import ParentMoney from './components/ParentMoney';
 import TodoList from './components/TodoList';
+import RegistrationForm from './components/RegistrationForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   (
     <div className='App'>
-      <TodoList/>
+      <RegistrationForm/>
+      {/* <TodoList/> */}
       {/* <Like/>
       <RandomName/>
       <Counter counterName={'Rohan'} initialValue={10}/>
