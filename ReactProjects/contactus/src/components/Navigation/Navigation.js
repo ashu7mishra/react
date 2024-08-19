@@ -1,12 +1,14 @@
 import React from 'react'
+import styles from './Navigation.module.css'
 
 const Navigation = () => {
+  console.log(styles);
   return (
-    <nav>
+    <nav className={`${styles.navigation} container`}>
         <div className='logo'>
             <img src='/images/logo.png' alt='do some coding logo'/>
         </div>
-        <ul>
+        <ul className='navigation'>
             <li>Home</li>
             <li>About</li>
             <li>Contact</li>
